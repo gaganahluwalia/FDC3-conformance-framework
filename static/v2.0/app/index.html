@@ -24,9 +24,10 @@
     <select id="version" style="width: 250px;"></select>
     <input id="runButton" value="Run" type="button" />
   </div>
-  <div class="center" id="manualTests-selector">
+  <div id="manualTests-selector">
+  <div class="center" >
     <label for="manualTests">Manual Tests:</label>
-    <select id="manualTests" style="width: 250px;">
+    <select id="manualTests" class="manualTests">
       <option value="test1">fdc3.ResolveAmbiguousIntentTarget 2.0</option>
       <option value="test2">fdc3.ResolveAmbiguousContextTarget 2.0</option>
       <option value="test3">fdc3.ResolveAmbiguousIntentTargetMultiInstance 2.0</option>
@@ -34,6 +35,8 @@
     </select>
     <input id="manualTestsRunButton" value="Run" type="button" />
   </div>
+  <p class="manualTestsInfo"><span class="bold">Manual Tests:</span>  Each of these tests will invoke the intent resolver of the Desktop Agent.  In order for the test to pass you will need to manually choose an application to resolve the intent.</p>
+</div>
   <p id="context"></p>
   <script src="../../lib/fdc3-compliance-v2.0.js"></script>
   <script>

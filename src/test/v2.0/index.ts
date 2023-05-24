@@ -39,7 +39,6 @@ function executeManualTests() {
   toggleBackButton();
   const manualTests = document.getElementById("manualTests") as HTMLSelectElement;
   var selectedManualTest = manualTests.options[manualTests.selectedIndex].innerHTML;
-  console.log('******** Selected manual test is',selectedManualTest);
   const action = () => executeManualTestsInBrowser(selectedManualTest);
   if (window.fdc3) {
     action();
